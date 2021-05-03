@@ -36,7 +36,10 @@ const QuotesContainer = () => {
             <div className="container">
                 <Quote quote={quote}/>
                 <div className="btn-container mt-3">
-                    <button className="btn btn-primary" onClick={randomQuote}>New Quote</button>       
+                    <a className="btn btn-primary" href={`https://twitter.com/intent/tweet?text=${quote.quote} By: -${quote.author}`} rel="noreferrer" target="_blank">
+                       Tweet it
+                    </a>   
+
                     <button className="btn btn-primary" onClick={randomQuote}>New Quote</button>       
                 </div>            
             </div>
